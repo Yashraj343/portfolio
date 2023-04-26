@@ -28,7 +28,7 @@ const Hero = () => {
 
 
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am a pre-final year Engineering student <br className='sm:block hidden' />
+            A pre-final year CSE student <br className='sm:block hidden' />
             
           </p>
           <br />

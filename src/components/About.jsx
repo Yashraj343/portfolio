@@ -4,10 +4,15 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { services } from "../constants";
+import {visit} from "../assets";
 import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
+// import { fadeIn, textVariant } from "../utils/motion";
+import { textVariant, fadeIn } from "./../utils/motion";
 
-const ServiceCard = ({ index, title, icon }) => (
+const ServiceCard = ({ index, title, icon , link}) => {
+  console.log(title);
+  return(
+    
 //   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -30,13 +35,19 @@ const ServiceCard = ({ index, title, icon }) => (
         <h3 className='text-white text-[20px] font-bold text-center'>
           {title}
         </h3>
+        {/* <a href={link}> < img src={visit} className = "w-8 h-8 bg-cyan-100 " /> </a>
+         */}
+         <a href={link} target="_blank" rel="noopener noreferrer">
+  <img src={visit} className="w-8 h-8 bg-cyan-100" />
+</a>
+
       </div>
     </motion.div>
 //   </Tilt>
+  )
+      }  
 
-    
-
-);
+// );
 
 const About = () => {
   return (
@@ -66,12 +77,17 @@ const About = () => {
   <div style={{display: "flex", flexWrap: "wrap"}}>
     {services.map((service, index) => (
       <div key={service.title} style={{width: "50%", marginBottom: "20px"}}>
-        <ServiceCard index={index} {...service} />
+        <ServiceCard  index={index} {...service} />
       </div>
     ))}
   </div>
 </div>
 
+      {/* <div className='mt-20 flex flex-wrap gap-40 '>
+          {services.map((service,index)=>(
+            <ServiceCard key={service.title} index={index} {...service}/>
+          ))}
+      </div> */}
 
 
     </>
@@ -80,5 +96,4 @@ const About = () => {
 
 export default SectionWrapper(About, "about");
 // export default About;
-
 

@@ -22,6 +22,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import leetcode from "./leetcode.png";
 import meta from "./company/meta.png";
+import visit from "./visit.png";
 import carrent from "./carrent.png";
 import gfg from "./gfg.png";
 import linkedin from "./linkedin.png";
@@ -37,10 +38,11 @@ import college from "./collg.png";
 import rotaract from "./rotaract.png";
 import grad from "./grad.png";
 
-import fitness from "./fitness.png";
+import fitness from "./fitness.jpg";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import ats from "./ats.png";
+import portfolio from "./portfolio.jpg";
 
 export {
   logo,
@@ -59,9 +61,11 @@ export {
   gfg,
   docker,
   ats,
+  portfolio,
   linkedin,
   school,
   figma,
+  visit,
   git,
   html,
   javascript,
@@ -79,7 +83,6 @@ export {
   grad,
   // starbucks,
   // tesla,
-  carrent,
   fitness,
   jobit,
   tripguide,

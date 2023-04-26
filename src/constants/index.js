@@ -13,6 +13,7 @@ import {
     linkedin,
     school,
     githubb,
+    portfolio,
     redux,
     pace,
     grad,
@@ -52,53 +53,31 @@ import {
     },
   ];
   
-  // const services = [
-  //   {
-  //     title: "Leetcode",
-  //     icon: leetcode,
-  //     link: "https://leetcode.com/ysp_/"
-  //   },
-  //   {
-  //     title: "GFG",
-  //     icon: gfg,
-  //     // source_code_link: "https://auth.geeksforgeeks.org/user/ysp_/",
-    
-  //   },
-  //   {
-  //     title: "Github",
-  //     icon: githubb,
-      
-  //   },
-  //   {
-  //     title: "LinkedIn",
-  //     icon: linkedin,
-  //   },
-  // ];
   
   const services = [
     {
       title: "Leetcode",
       icon: leetcode,
-      link: "https://leetcode.com/ysp_/"
+      link: "https://leetcode.com/ysp_/",
     },
     {
       title: "GFG",
       icon: gfg,
-      link: "https://auth.geeksforgeeks.org/user/ysp_/"
+      link: "https://auth.geeksforgeeks.org/user/ysp_/",
     },
     {
       title: "Github",
       icon: githubb,
-      link: "https://github.com/"
+      link: "https://github.com/yashrajp-dot",
     },
     {
       title: "LinkedIn",
       icon: linkedin,
-      link: "https://www.linkedin.com/in/"
+      link: "https://www.linkedin.com/in/yashrajpatil22/",
+      
     },
   ];
-  
- 
+
   const technologies = [
     {
       name: "HTML 5",
@@ -294,26 +273,28 @@ import {
       // source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Personal Portfolio Site",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "My 3D portfolio site is a visually stunning web application that allows users to interact with a collection of 3D models and animations. I built the site using Three.js, which is a powerful library for creating 3D graphics in the browser. I also used Tailwind CSS for styling and React for building the user interface",
       tags: [
         {
-          name: "nextjs",
+          name: "ReactJS",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "ThreeJS",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "TailwindCSS",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: portfolio,
+      source_code_link: "https://github.com/yashrajp-dot/portfolio",
     },
   ];
-  
-  export { services, technologies, experiences, testimonials, projects };
+
+
+
+  export { services, technologies, experiences, testimonials, projects};
